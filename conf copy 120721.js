@@ -357,200 +357,200 @@ export const STANDARD_ROOMS_GRAPH = [
 //     }
 // ];
 
-// export const STANDARD_EQUIPMENT_GRAPH = [
-//     {
-//         name: "Courant fort",
-//         type: "groupingCategory",
-//         standard_name: "CFO",
-//         icon: "accessibility",
-//         color: "#BD1E13",
-//         groups: [
-//             {
-//                 name: "Luminaires",
-//                 standard_name: "Lamps",
-//                 type: "BIMObjectGroup",
-//                 color: "#A82727",
-//             },
-//             {
-//                 name: "Convertisseur de Puissance",
-//                 standard_name: "Power Converters",
-//                 type: "BIMObjectGroup",
-//                 color: "#3ECBAC",
-//             },
-//             {
-//                 name: "Batteries",
-//                 standard_name: "Batteries",
-//                 type: "BIMObjectGroup",
-//                 color: "#228B3B",
-//             },
-//             {
-//                 name: "Panneaux photovoltaïques",
-//                 standard_name: "Solar Panels",
-//                 type: "BIMObjectGroup",
-//                 color: "#228B3B",
-//             },
-//             {
-//                 name: "Transformateurs",
-//                 standard_name: "Transformators",
-//                 type: "BIMObjectGroup",
-//                 color: "#372FE8",
-//             },
-//             {
-//                 name: "Chargeurs électriques",
-//                 standard_name: "Power Chargers",
-//                 type: "BIMObjectGroup",
-//                 color: "#A6BC55",
-//             },
-//             {
-//                 name: "Armoire électrique",
-//                 standard_name: "Control Cabinets",
-//                 type: "BIMObjectGroup",
-//                 color: "#1823A8",
-//             }
-//         ]
-//     },
-//     {
-//         name: "Courant faible",
-//         type: "groupingCategory",
-//         standard_name: "CFA",
-//         icon: "accessibility",
-//         color: "#BD8913",
-//         groups: [
-//             {
-//                 name: "Automates",
-//                 standard_name: "Controllers",
-//                 type: "BIMObjectGroup",
-//                 color: "#3C8FD3",
-//             },
-//             {
-//                 name: "Capteurs",
-//                 standard_name: "Sensors",
-//                 type: "BIMObjectGroup",
-//                 color: "#E81C1C",
-//             },
-//             {
-//                 name: "Contrôleurs",
-//                 standard_name: "Controllers",
-//                 type: "BIMObjectGroup",
-//                 color: "#DF7979",
-//             },
-//             {
-//                 name: "Contacts de fenêtres",
-//                 standard_name: "Windows Contacts",
-//                 type: "BIMObjectGroup",
-//                 color: "#372E99",
-//             },
-//             {
-//                 name: "Stores électriques",
-//                 standard_name: "Electrical Blinds",
-//                 type: "BIMObjectGroup",
-//                 color: "#E31C1C",
-//             },
-//             {
-//                 name: "Lecteurs d'accès",
-//                 standard_name: "Access Readers",
-//                 type: "BIMObjectGroup",
-//                 color: "#DBC328",
-//             }
-//         ]
-//     },
-//     {
-//         name: "Chauffage / Ventilation / Climatisation",
-//         standard_name: "CVC",
-//         type: "groupingCategory",
-//         icon: "accessibility",
-//         color: "#13B0BD",
-//         groups: [
-//             {
-//                 name: "Ventilo-Convecteur",
-//                 standard_name: "Fan Coil",
-//                 type: "BIMObjectGroup",
-//                 color: "#E32B2B",
-//             },
-//             {
-//                 name: "Ballons d'eau",
-//                 standard_name: "Water Tanks",
-//                 type: "BIMObjectGroup",
-//                 color: "#C31D71",
-//             },
-//             {
-//                 name: "Centrales de traitement d'air",
-//                 standard_name: "Central air units",
-//                 type: "BIMObjectGroup",
-//                 color: "#C48DDF",
-//             },
-//             {
-//                 name: "Air conditionné",
-//                 standard_name: "Air conditioners",
-//                 type: "BIMObjectGroup",
-//                 color: "#F47272",
-//             },
-//             {
-//                 name: "Vannes 6 Voies",
-//                 standard_name: "V6V",
-//                 type: "BIMObjectGroup",
-//                 color: "#6C7CF8",
-//             },
-//             {
-//                 name: "Bouches d'aération",
-//                 standard_name: "Air Vents",
-//                 type: "BIMObjectGroup",
-//                 color: "#7212B4",
-//             },
-//             {
-//                 name: "Chaudières",
-//                 standard_name: "Heaters",
-//                 type: "BIMObjectGroup",
-//                 color: "#E32B2B",
-//             }
-//         ]
-//     },
-//     {
-//         name: "Mobilier",
-//         type: "groupingCategory",
-//         standard_name: "Furnitures",
-//         icon: "accessibility",
-//         color: "#9B13BD",
-//         groups: [
-//             {
-//                 name: "Bureaux",
-//                 standard_name: "Offices",
-//                 type: "BIMObjectGroup",
-//                 color: "#A82727",
-//             },
-//             {
-//                 name: "Chaises",
-//                 standard_name: "Chairs",
-//                 type: "BIMObjectGroup",
-//                 color: "#BD7713",
-//             },
-//             {
-//                 name: "Tables",
-//                 standard_name: "Desks",
-//                 type: "BIMObjectGroup",
-//                 color: "#BD138C",
-//             },
-//             {
-//                 name: "Rangement",
-//                 standard_name: "Storage",
-//                 type: "BIMObjectGroup",
-//                 color: "#13BDB2",
-//             },
-//             {
-//                 name: "Plantes",
-//                 standard_name: "Plants",
-//                 type: "BIMObjectGroup",
-//                 color: "#61BD13",
-//             },
-//             {
-//                 name: "Poubelles",
-//                 standard_name: "Trashs",
-//                 type: "BIMObjectGroup",
-//                 color: "#0DDF47",
-//             },
-//         ]
-//     }
-// ];
+export const STANDARD_EQUIPMENT_GRAPH = [
+    {
+        name: "Courant fort",
+        type: "groupingCategory",
+        standard_name: "CFO",
+        icon: "accessibility",
+        color: "#BD1E13",
+        groups: [
+            {
+                name: "Luminaires",
+                standard_name: "Lamps",
+                type: "BIMObjectGroup",
+                color: "#A82727",
+            },
+            {
+                name: "Convertisseur de Puissance",
+                standard_name: "Power Converters",
+                type: "BIMObjectGroup",
+                color: "#3ECBAC",
+            },
+            {
+                name: "Batteries",
+                standard_name: "Batteries",
+                type: "BIMObjectGroup",
+                color: "#228B3B",
+            },
+            {
+                name: "Panneaux photovoltaïques",
+                standard_name: "Solar Panels",
+                type: "BIMObjectGroup",
+                color: "#228B3B",
+            },
+            {
+                name: "Transformateurs",
+                standard_name: "Transformators",
+                type: "BIMObjectGroup",
+                color: "#372FE8",
+            },
+            {
+                name: "Chargeurs électriques",
+                standard_name: "Power Chargers",
+                type: "BIMObjectGroup",
+                color: "#A6BC55",
+            },
+            {
+                name: "Armoire électrique",
+                standard_name: "Control Cabinets",
+                type: "BIMObjectGroup",
+                color: "#1823A8",
+            }
+        ]
+    },
+    {
+        name: "Courant faible",
+        type: "groupingCategory",
+        standard_name: "CFA",
+        icon: "accessibility",
+        color: "#BD8913",
+        groups: [
+            {
+                name: "Automates",
+                standard_name: "Controllers",
+                type: "BIMObjectGroup",
+                color: "#3C8FD3",
+            },
+            {
+                name: "Capteurs",
+                standard_name: "Sensors",
+                type: "BIMObjectGroup",
+                color: "#E81C1C",
+            },
+            {
+                name: "Contrôleurs",
+                standard_name: "Controllers",
+                type: "BIMObjectGroup",
+                color: "#DF7979",
+            },
+            {
+                name: "Contacts de fenêtres",
+                standard_name: "Windows Contacts",
+                type: "BIMObjectGroup",
+                color: "#372E99",
+            },
+            {
+                name: "Stores électriques",
+                standard_name: "Electrical Blinds",
+                type: "BIMObjectGroup",
+                color: "#E31C1C",
+            },
+            {
+                name: "Lecteurs d'accès",
+                standard_name: "Access Readers",
+                type: "BIMObjectGroup",
+                color: "#DBC328",
+            }
+        ]
+    },
+    {
+        name: "Chauffage / Ventilation / Climatisation",
+        standard_name: "CVC",
+        type: "groupingCategory",
+        icon: "accessibility",
+        color: "#13B0BD",
+        groups: [
+            {
+                name: "Ventilo-Convecteur",
+                standard_name: "Fan Coil",
+                type: "BIMObjectGroup",
+                color: "#E32B2B",
+            },
+            {
+                name: "Ballons d'eau",
+                standard_name: "Water Tanks",
+                type: "BIMObjectGroup",
+                color: "#C31D71",
+            },
+            {
+                name: "Centrales de traitement d'air",
+                standard_name: "Central air units",
+                type: "BIMObjectGroup",
+                color: "#C48DDF",
+            },
+            {
+                name: "Air conditionné",
+                standard_name: "Air conditioners",
+                type: "BIMObjectGroup",
+                color: "#F47272",
+            },
+            {
+                name: "Vannes 6 Voies",
+                standard_name: "V6V",
+                type: "BIMObjectGroup",
+                color: "#6C7CF8",
+            },
+            {
+                name: "Bouches d'aération",
+                standard_name: "Air Vents",
+                type: "BIMObjectGroup",
+                color: "#7212B4",
+            },
+            {
+                name: "Chaudières",
+                standard_name: "Heaters",
+                type: "BIMObjectGroup",
+                color: "#E32B2B",
+            }
+        ]
+    },
+    {
+        name: "Mobilier",
+        type: "groupingCategory",
+        standard_name: "Furnitures",
+        icon: "accessibility",
+        color: "#9B13BD",
+        groups: [
+            {
+                name: "Bureaux",
+                standard_name: "Offices",
+                type: "BIMObjectGroup",
+                color: "#A82727",
+            },
+            {
+                name: "Chaises",
+                standard_name: "Chairs",
+                type: "BIMObjectGroup",
+                color: "#BD7713",
+            },
+            {
+                name: "Tables",
+                standard_name: "Desks",
+                type: "BIMObjectGroup",
+                color: "#BD138C",
+            },
+            {
+                name: "Rangement",
+                standard_name: "Storage",
+                type: "BIMObjectGroup",
+                color: "#13BDB2",
+            },
+            {
+                name: "Plantes",
+                standard_name: "Plants",
+                type: "BIMObjectGroup",
+                color: "#61BD13",
+            },
+            {
+                name: "Poubelles",
+                standard_name: "Trashs",
+                type: "BIMObjectGroup",
+                color: "#0DDF47",
+            },
+        ]
+    }
+];
 
 // export const STANDARD_CONTROL_ENDPOINT_GRAPH = [
 //     {
@@ -765,273 +765,6 @@ export const STANDARD_ROOMS_GRAPH = [
 //     }
 // ];
 
-export const STANDARD_EQUIPMENT_GRAPH = [
-    {
-        name: "Courant fort",
-        type: "groupingCategory",
-        standard_name: "CFO",
-        icon: "accessibility",
-        color: "#BD1E13",
-        groups: [
-            {
-                name: "Luminaires",
-                standard_name: "Lamps",
-                type: "BIMObjectGroup",
-                color: "#A82727",
-            },
-            {
-                name: "Convertisseur de Puissance",
-                standard_name: "Power Converters",
-                type: "BIMObjectGroup",
-                color: "#3ECBAC",
-            },
-            {
-                name: "Batteries",
-                standard_name: "Batteries",
-                type: "BIMObjectGroup",
-                color: "#228B3B",
-            },
-            {
-                name: "Panneaux photovoltaïques",
-                standard_name: "Solar Panels",
-                type: "BIMObjectGroup",
-                color: "#228B3B",
-            },
-            {
-                name: "Transformateurs",
-                standard_name: "Transformators",
-                type: "BIMObjectGroup",
-                color: "#372FE8",
-            },
-            {
-                name: "Chargeurs électriques",
-                standard_name: "Power Chargers",
-                type: "BIMObjectGroup",
-                color: "#A6BC55",
-            },
-            {
-                name: "Armoire électrique",
-                standard_name: "Control Cabinets",
-                type: "BIMObjectGroup",
-                color: "#1823A8",
-            }
-        ]
-    },
-    {
-        name: "Courant faible",
-        type: "groupingCategory",
-        standard_name: "CFA",
-        icon: "accessibility",
-        color: "#BD8913",
-        groups: [
-            {
-                name: "Automates",
-                standard_name: "Controllers",
-                type: "BIMObjectGroup",
-                color: "#3C8FD3",
-            },
-            {
-                name: "Capteurs",
-                standard_name: "Sensors",
-                type: "BIMObjectGroup",
-                color: "#E81C1C",
-            },
-            {
-                name: "Contrôleurs",
-                standard_name: "Controllers",
-                type: "BIMObjectGroup",
-                color: "#DF7979",
-            },
-            {
-                name: "Contacts de fenêtres",
-                standard_name: "Windows Contacts",
-                type: "BIMObjectGroup",
-                color: "#372E99",
-            },
-            {
-                name: "Stores électriques",
-                standard_name: "Electrical Blinds",
-                type: "BIMObjectGroup",
-                color: "#E31C1C",
-            },
-            {
-                name: "Lecteurs d'accès",
-                standard_name: "Access Readers",
-                type: "BIMObjectGroup",
-                color: "#DBC328",
-            }
-        ]
-    },
-    {
-        name: "Chauffage / Ventilation / Climatisation",
-        standard_name: "CVC",
-        type: "groupingCategory",
-        icon: "accessibility",
-        color: "#13B0BD",
-        groups: [
-            {
-                name: "Ventilo-Convecteur",
-                standard_name: "Fan Coil",
-                type: "BIMObjectGroup",
-                color: "#E32B2B",
-            },
-            {
-                name: "Ballons d'eau",
-                standard_name: "Water Tanks",
-                type: "BIMObjectGroup",
-                color: "#C31D71",
-            },
-            {
-                name: "Centrales de traitement d'air",
-                standard_name: "Central air units",
-                type: "BIMObjectGroup",
-                color: "#C48DDF",
-            },
-            {
-                name: "Air conditionné",
-                standard_name: "Air conditioners",
-                type: "BIMObjectGroup",
-                color: "#F47272",
-            },
-            {
-                name: "Vannes 6 Voies",
-                standard_name: "V6V",
-                type: "BIMObjectGroup",
-                color: "#6C7CF8",
-            },
-            {
-                name: "Bouches d'aération",
-                standard_name: "Air Vents",
-                type: "BIMObjectGroup",
-                color: "#7212B4",
-            },
-            {
-                name: "Chaudières",
-                standard_name: "Heaters",
-                type: "BIMObjectGroup",
-                color: "#E32B2B",
-            }
-        ]
-    },
-    {
-        name: "Mobilier",
-        type: "groupingCategory",
-        standard_name: "Furnitures",
-        icon: "accessibility",
-        color: "#9B13BD",
-        groups: [
-            {
-                name: "Bureaux",
-                standard_name: "Offices",
-                type: "BIMObjectGroup",
-                color: "#A82727",
-            },
-            {
-                name: "Chaises",
-                standard_name: "Chairs",
-                type: "BIMObjectGroup",
-                color: "#BD7713",
-            },
-            {
-                name: "Tables",
-                standard_name: "Desks",
-                type: "BIMObjectGroup",
-                color: "#BD138C",
-            },
-            {
-                name: "Rangement",
-                standard_name: "Storage",
-                type: "BIMObjectGroup",
-                color: "#13BDB2",
-            },
-            {
-                name: "Plantes",
-                standard_name: "Plants",
-                type: "BIMObjectGroup",
-                color: "#61BD13",
-            },
-            {
-                name: "Poubelles",
-                standard_name: "Trashs",
-                type: "BIMObjectGroup",
-                color: "#0DDF47",
-            },
-        ]
-    },
-    {
-        name: "Plomberie",
-        type: "groupingCategory",
-        standard_name: "PLB",
-        icon: "accessibility",
-        color: "#17D240",
-        groups: [
-            {
-                name: "Extincteur",
-                standard_name: "Extinguisher",
-                type: "BIMObjectGroup",
-                color: "#BB7C7D",
-            },
-            {
-                name: "Déversoir mural",
-                standard_name: "Wall outlet",
-                type: "BIMObjectGroup",
-                color: "#C4A32A",
-            },
-            {
-                name: "Lave-main",
-                standard_name: "Hand wash",
-                type: "BIMObjectGroup",
-                color: "#8F21FB",
-            },
-            {
-                name: "R.I.A. DN 25",
-                standard_name: "R.I.A. DN 25",
-                type: "BIMObjectGroup",
-                color: "#F8374A",
-            },
-            {
-                name: "Cuvette WC",
-                standard_name: "WC bowl",
-                type: "BIMObjectGroup",
-                color: "#169483",
-            },
-            {
-                name: "Mitigeur électronique",
-                standard_name: "Electronic mixer",
-                type: "BIMObjectGroup",
-                color: "#62EEDB",
-            }
-        ]
-    },
-    {
-        name: "Courant fort",
-        type: "groupingCategory",
-        standard_name: "CFA",
-        icon: "accessibility",
-        color: "#17D240",
-        groups: [
-            {
-                name: "Contrôle d'accès : UTL",
-                standard_name: "Fan Coil",
-                type: "BIMObjectGroup",
-                color: "#E32B2B",
-            },
-            {
-                name: "Contrôle d'accès : LB",
-                standard_name: "Fan Coil",
-                type: "BIMObjectGroup",
-                color: "#E32B2B",
-            },
-            {
-                name: "Anti-intrusion : CP intrusion",
-                standard_name: "Fan Coil",
-                type: "BIMObjectGroup",
-                color: "#E32B2B",
-            }
-        ]
-    }
-];
-
 export const STANDARD_CONTROL_ENDPOINT_GRAPH = [
     {
         name: "Standards",
@@ -1227,10 +960,10 @@ export const STANDARD_CONTROL_ENDPOINT_GRAPH = [
                                 id: Date.now() + ++i
                             },
                             {
-                                name: "Qualité de l'air",
-                                alias: "air quality",
+                                name: "Qualité de l'air : indice ATMO",
+                                alias: "air quality : ATMO indicator",
                                 path: "",
-                                unit: "ppm",
+                                unit: "ATMO",
                                 dataType: "Float",
                                 type: "Insight",
                                 command: 0,
@@ -1273,40 +1006,6 @@ export const STANDARD_CONTROL_ENDPOINT_GRAPH = [
                                     min: { value: 0, color: "#00FCFF" },
                                     average: { value: 25, color: "#30FF00" },
                                     max: { value: 50, color: "#9A0808" },
-                                    calculation_rule: "Reference"
-                                },
-                                id: Date.now() + ++i
-                            },
-                            {
-                                name: "Nombre d'espaces occupés",
-                                alias: "number of occupied spaces",
-                                path: "",
-                                unit: "",
-                                dataType: "Integer",
-                                type: "Insight",
-                                command: 0,
-                                saveTimeSeries: 1,
-                                config: {
-                                    min: { value: 0, color: "#00FCFF" },
-                                    average: { value: 50, color: "#30FF00" },
-                                    max: { value: 100, color: "#9A0808" },
-                                    calculation_rule: "Reference"
-                                },
-                                id: Date.now() + ++i
-                            },
-                            {
-                                name: "Taux d'occupation",
-                                alias: "occupation rate",
-                                path: "",
-                                unit: "%",
-                                dataType: "Float",
-                                type: "Insight",
-                                command: 0,
-                                saveTimeSeries: 1,
-                                config: {
-                                    min: { value: 0, color: "#00FCFF" },
-                                    average: { value: 50, color: "#30FF00" },
-                                    max: { value: 100, color: "#9A0808" },
                                     calculation_rule: "Reference"
                                 },
                                 id: Date.now() + ++i
@@ -1415,10 +1114,10 @@ export const STANDARD_CONTROL_ENDPOINT_GRAPH = [
                                 id: Date.now() + ++i
                             },
                             {
-                                name: "Qualité de l'air",
-                                alias: "air quality",
+                                name: "Qualité de l'air : indice ATMO",
+                                alias: "air quality : ATMO indicator",
                                 path: "",
-                                unit: "ppm",
+                                unit: "ATMO",
                                 dataType: "Float",
                                 type: "Insight",
                                 command: 0,
@@ -1461,40 +1160,6 @@ export const STANDARD_CONTROL_ENDPOINT_GRAPH = [
                                     min: { value: 0, color: "#00FCFF" },
                                     average: { value: 25, color: "#30FF00" },
                                     max: { value: 50, color: "#9A0808" },
-                                    calculation_rule: "Reference"
-                                },
-                                id: Date.now() + ++i
-                            },
-                            {
-                                name: "Nombre d'espaces occupés",
-                                alias: "number of occupied spaces",
-                                path: "",
-                                unit: "",
-                                dataType: "Integer",
-                                type: "Insight",
-                                command: 0,
-                                saveTimeSeries: 1,
-                                config: {
-                                    min: { value: 0, color: "#00FCFF" },
-                                    average: { value: 50, color: "#30FF00" },
-                                    max: { value: 100, color: "#9A0808" },
-                                    calculation_rule: "Reference"
-                                },
-                                id: Date.now() + ++i
-                            },
-                            {
-                                name: "Taux d'occupation",
-                                alias: "occupation rate",
-                                path: "",
-                                unit: "%",
-                                dataType: "Float",
-                                type: "Insight",
-                                command: 0,
-                                saveTimeSeries: 1,
-                                config: {
-                                    min: { value: 0, color: "#00FCFF" },
-                                    average: { value: 50, color: "#30FF00" },
-                                    max: { value: 100, color: "#9A0808" },
                                     calculation_rule: "Reference"
                                 },
                                 id: Date.now() + ++i
@@ -1512,74 +1177,16 @@ export const STANDARD_CONTROL_ENDPOINT_GRAPH = [
                     name: "Room"
                 },
                 groups: [
-                    // {
-                    //     name: "Local spécifique",
-                    //     type: "SpinalControlPoint",
-                    //     standard_name: "specific room",
-                    //     elements: [
-                    //         {
-                    //             name: "Qualité de l'air",
-                    //             alias: "air quality",
-                    //             path: "",
-                    //             unit: "ppm",
-                    //             dataType: "Float",
-                    //             type: "Insight",
-                    //             command: 0,
-                    //             saveTimeSeries: 1,
-                    //             config: {
-                    //                 min: { value: 0, color: "#00FCFF" },
-                    //                 average: { value: 5, color: "#30FF00" },
-                    //                 max: { value: 10, color: "#9A0808" },
-                    //                 calculation_rule: "Reference"
-                    //             },
-                    //             id: Date.now() + ++i
-                    //         },
-                    //         {
-                    //             name: "Luminosité",
-                    //             alias: "luminosity",
-                    //             path: "",
-                    //             unit: "lum",
-                    //             dataType: "Float",
-                    //             type: "Insight",
-                    //             command: 0,
-                    //             saveTimeSeries: 1,
-                    //             config: {
-                    //                 min: { value: 0, color: "#00FCFF" },
-                    //                 average: { value: 150, color: "#30FF00" },
-                    //                 max: { value: 300, color: "#9A0808" },
-                    //                 calculation_rule: "Reference"
-                    //             },
-                    //             id: Date.now() + ++i
-                    //         },
-                    //         {
-                    //             name: "Temperature moyenne",
-                    //             alias: "average temperature",
-                    //             path: "",
-                    //             unit: "°C",
-                    //             dataType: "Float",
-                    //             type: "Insight",
-                    //             command: 0,
-                    //             saveTimeSeries: 1,
-                    //             config: {
-                    //                 min: { value: 0, color: "#00FCFF" },
-                    //                 average: { value: 25, color: "#30FF00" },
-                    //                 max: { value: 50, color: "#9A0808" },
-                    //                 calculation_rule: "Reference"
-                    //             },
-                    //             id: Date.now() + ++i
-                    //         }
-                    //     ]
-                    // },
                     {
-                        name: "Local générique",
+                        name: "Local spécifique",
                         type: "SpinalControlPoint",
-                        standard_name: "generic room",
+                        standard_name: "specific room",
                         elements: [
                             {
-                                name: "Qualité de l'air",
-                                alias: "air quality",
+                                name: "Qualité de l'air : indice ATMO",
+                                alias: "air quality : ATMO indicator",
                                 path: "",
-                                unit: "ppm",
+                                unit: "ATMO",
                                 dataType: "Float",
                                 type: "Insight",
                                 command: 0,
@@ -1625,44 +1232,61 @@ export const STANDARD_CONTROL_ENDPOINT_GRAPH = [
                                     calculation_rule: "Reference"
                                 },
                                 id: Date.now() + ++i
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        name: "Local générique",
+                        type: "SpinalControlPoint",
+                        standard_name: "generic room",
+                        elements: [
                             {
-                                name: "Occupation",
-                                alias: "occupation",
+                                name: "Qualité de l'air : indice ATMO",
+                                alias: "air quality : ATMO indicator",
                                 path: "",
-                                unit: "",
-                                dataType: "Enum",
-                                type: "Insight",
-                                command: 0,
-                                saveTimeSeries: 1,
-                                config: {
-                                    enumeration: [
-                                        {
-                                            name: "Libre",
-                                            color: "#09E312",
-                                        },
-                                        {
-                                            name: "Occupée",
-                                            color: "#E0A105",
-                                        }
-                                    ],
-                                    calculation_rule: "Reference"
-                                },
-                                id: Date.now() + ++i
-                            },
-                            {
-                                name: "Taux d'occupation",
-                                alias: "occupation rate",
-                                path: "",
-                                unit: "%",
+                                unit: "ATMO",
                                 dataType: "Float",
                                 type: "Insight",
                                 command: 0,
                                 saveTimeSeries: 1,
                                 config: {
                                     min: { value: 0, color: "#00FCFF" },
-                                    average: { value: 50, color: "#30FF00" },
-                                    max: { value: 100, color: "#9A0808" },
+                                    average: { value: 5, color: "#30FF00" },
+                                    max: { value: 10, color: "#9A0808" },
+                                    calculation_rule: "Reference"
+                                },
+                                id: Date.now() + ++i
+                            },
+                            {
+                                name: "Luminosité",
+                                alias: "luminosity",
+                                path: "",
+                                unit: "lum",
+                                dataType: "Float",
+                                type: "Insight",
+                                command: 0,
+                                saveTimeSeries: 1,
+                                config: {
+                                    min: { value: 0, color: "#00FCFF" },
+                                    average: { value: 150, color: "#30FF00" },
+                                    max: { value: 300, color: "#9A0808" },
+                                    calculation_rule: "Reference"
+                                },
+                                id: Date.now() + ++i
+                            },
+                            {
+                                name: "Temperature moyenne",
+                                alias: "average temperature",
+                                path: "",
+                                unit: "°C",
+                                dataType: "Float",
+                                type: "Insight",
+                                command: 0,
+                                saveTimeSeries: 1,
+                                config: {
+                                    min: { value: 0, color: "#00FCFF" },
+                                    average: { value: 25, color: "#30FF00" },
+                                    max: { value: 50, color: "#9A0808" },
                                     calculation_rule: "Reference"
                                 },
                                 id: Date.now() + ++i

@@ -42,6 +42,9 @@ class StandardRoomContext {
                   if (typeof StandardRoomContext.context === "undefined") {
                     SpinalGraphService.addContext(StandardRoomContext.contextName, StandardRoomContext.type).then(context => {
                         StandardRoomContext.context = context;
+                        StandardRoomContext.context.info.add_attr({
+                          standard_name: "Standard Room Context"
+                        });
                         StandardRoomContext.contextId = context.info.id.get();
 
                         console.log(StandardRoomContext);

@@ -40,6 +40,9 @@ class StandardEquipmentContext {
                   if (typeof StandardEquipmentContext.context === "undefined") {
                     SpinalGraphService.addContext(StandardEquipmentContext.contextName, StandardEquipmentContext.type).then(context => {
                         StandardEquipmentContext.context = context;
+                        StandardEquipmentContext.context.info.add_attr({
+                          standard_name: "Standard Equipments Context"
+                        });
                         StandardEquipmentContext.contextId = context.info.id.get();
 
                         console.log(StandardEquipmentContext);

@@ -42,6 +42,9 @@ class StandardControlEndpointContext {
                   if (typeof StandardControlEndpointContext.context === "undefined") {
                     SpinalGraphService.addContext(StandardControlEndpointContext.contextName, StandardControlEndpointContext.type).then(context => {
                         StandardControlEndpointContext.context = context;
+                        StandardControlEndpointContext.context.info.add_attr({
+                          standard_name: "Standard Control Endpoints Context"
+                        });
                         StandardControlEndpointContext.contextId = context.info.id.get();
 
                         console.log(StandardControlEndpointContext);
@@ -67,7 +70,8 @@ class StandardControlEndpointContext {
                   const categoryId = SpinalGraphService.createNode({
                     name: category.name,
                     type: category.type,
-                    icon: category.icon
+                    icon: category.icon,
+                    standard_name: category.standard_name
                   }, new Model({
                     name : category.elements.name
                   }));
@@ -78,6 +82,7 @@ class StandardControlEndpointContext {
                       name: group.name,
                       type: group.type,
                       color: group.color,
+                      standard_name: group.standard_name
                     }, new Model({
                       name : group.elements.name
                     }));
@@ -88,6 +93,7 @@ class StandardControlEndpointContext {
                       const controlEndpointId = SpinalGraphService.createNode({
                         name: controlEndpoint.name,
                         type: controlEndpoint.type,
+                        standard_name: controlEndpoint.standard_name
                       }, new Lst(controlEndpoint.elements));
                       await SpinalGraphService.addChildInContext(groupId, controlEndpointId, this.contextId, "groupHasSpinalControlPoint", SPINAL_RELATION_LST_PTR_TYPE);
                       

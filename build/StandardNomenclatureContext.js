@@ -45,6 +45,9 @@ class StandardNomenclatureContext {
                       childType: "AttributeConfiguration"
                     })).then(context => {
                         StandardNomenclatureContext.context = context;
+                        StandardNomenclatureContext.context.info.add_attr({
+                          standard_name: "Standard Nomenclature Context"
+                        });
                         StandardNomenclatureContext.contextId = context.info.id.get();
 
                         console.log(StandardNomenclatureContext);
