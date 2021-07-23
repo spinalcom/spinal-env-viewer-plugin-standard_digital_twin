@@ -50,14 +50,14 @@ class StandardNomenclatureContext {
                         });
                         StandardNomenclatureContext.contextId = context.info.id.get();
 
-                        console.log(StandardNomenclatureContext);
-                        console.log(StandardNomenclatureContext.contextId);
+                        // console.log(StandardNomenclatureContext);
+                        // console.log(StandardNomenclatureContext.contextId);
                         resolve(true);
                     }).catch(reject);
                   }
                   else{
                       StandardNomenclatureContext.contextId = StandardNomenclatureContext.context.info.id.get();
-                    console.log(StandardNomenclatureContext.contextId);
+                    // console.log(StandardNomenclatureContext.contextId);
                     resolve( true );
                   }
                 });
@@ -65,10 +65,10 @@ class StandardNomenclatureContext {
               }
 
               static async generateStandardNomenclatureGraph(){
-                console.log(STANDARD_NOMENCLATURE_GRAPH);
+                // console.log(STANDARD_NOMENCLATURE_GRAPH);
                 return this.initialize().then(async result => {
                   for(let category of STANDARD_NOMENCLATURE_GRAPH){
-                    console.log(category);
+                    // console.log(category);
                     const categoryId = SpinalGraphService.createNode({
                     name: category.name,
                     standard_name: category.standard_name,
@@ -88,7 +88,7 @@ class StandardNomenclatureContext {
                     }));
                     await SpinalGraphService.addChildInContext(categoryId, groupId, this.contextId, "hasGroup", SPINAL_RELATION_PTR_LST_TYPE);
                     for(let config of group.conf){
-                      console.log(config);
+                      // console.log(config);
                       // const nomenclatureConfigurationId = SpinalGraphService.createNode({
                       //   name: config.name,
                       //   type: config.type,
@@ -119,9 +119,9 @@ class StandardNomenclatureContext {
                       }));
                       SpinalGraphService.addChildInContext(groupId, nomenclatureConfigurationId, this.contextId, "groupHasAttributeConfiguration", SPINAL_RELATION_PTR_LST_TYPE)
                         .then(result =>{
-                          console.log(result);
+                          // console.log(result);
                           let realNode = SpinalGraphService.getRealNode(nomenclatureConfigurationId);
-                          console.log(realNode);
+                          // console.log(realNode);
                           realNode.getElement().then(el =>{
                             // let element = el.get();
                             if(el.id){
@@ -131,21 +131,21 @@ class StandardNomenclatureContext {
                               el.add_attr({id: realNode.info.id.get()});
                             }
                             
-                            console.log(el);
+                            // console.log(el);
                             // resolve(element);
                           });
                         });
                     }
                   }
                   }
-                }).catch(err => console.log(err));
+                 }).catch(err => console.log(err));
               }
 
             // static async generateStandardControlEndpointsGraph(){
-            //   console.log(STANDARD_TICKET_GRAPH);
+              //console.log(STANDARD_TICKET_GRAPH);
             //   return this.initialize().then(async result => {
             //     for(let category of STANDARD_TICKET_GRAPH){
-            //       console.log(category);
+                  //console.log(category);
 
             //       const categoryId = SpinalGraphService.createNode({
             //         name: category.name,
@@ -177,7 +177,7 @@ class StandardNomenclatureContext {
             //           }
             //       }
             //     }
-            //   }).catch(err => console.log(err));
+              //}).catch(err => console.log(err));
             // }
 }
 

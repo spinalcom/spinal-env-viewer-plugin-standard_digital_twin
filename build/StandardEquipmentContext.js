@@ -26,6 +26,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 import { SpinalContext, SpinalGraphService, SpinalNode, SPINAL_RELATION_PTR_LST_TYPE } from "spinal-env-viewer-graph-service";
 import { Model } from 'spinal-core-connectorjs_type';
 import { STANDARD_EQUIPMENT_GRAPH } from "../conf";
+import AttributeService from 'spinal-env-viewer-plugin-documentation-service';
 
 class StandardEquipmentContext {
 
@@ -45,14 +46,14 @@ class StandardEquipmentContext {
                         });
                         StandardEquipmentContext.contextId = context.info.id.get();
 
-                        console.log(StandardEquipmentContext);
-                        console.log(StandardEquipmentContext.contextId);
+                        // console.log(StandardEquipmentContext);
+                        // console.log(StandardEquipmentContext.contextId);
                         resolve(true);
                     }).catch(reject);
                   }
                   else{
                       StandardEquipmentContext.contextId = StandardEquipmentContext.context.info.id.get();
-                    console.log(StandardEquipmentContext.contextId);
+                    // console.log(StandardEquipmentContext.contextId);
                     resolve( true );
                   }
                 });
@@ -60,7 +61,7 @@ class StandardEquipmentContext {
               }
             
               static async generateStandardEquipmentsGraph(){
-                console.log(STANDARD_EQUIPMENT_GRAPH);
+                // console.log(STANDARD_EQUIPMENT_GRAPH);
                 return this.initialize().then(async result => {
                   for(let category of STANDARD_EQUIPMENT_GRAPH){
   
@@ -84,11 +85,27 @@ class StandardEquipmentContext {
                       }, new Model({
                         name : group.name
                       }));
-                      await SpinalGraphService.addChildInContext(categoryId, groupId, this.contextId, "hasGroup", SPINAL_RELATION_PTR_LST_TYPE);
+                      let groupNode = await SpinalGraphService.addChildInContext(categoryId, groupId, this.contextId, "hasGroup", SPINAL_RELATION_PTR_LST_TYPE);
+                      console.log(groupNode);
+                      
+                      if(group.categories != undefined){
+                        for (let cat of group.categories){
+                          let categoryAttribute = await AttributeService.addCategoryAttribute(groupNode, cat.label);
+                          console.log(categoryAttribute);
+                          for (let attr of cat.attributes){
+                            AttributeService.addAttributeByCategory(groupNode, categoryAttribute, attr.label, attr.value, attr.type, attr.unit);
+                          }
+                        }
+                      }
+                      
                     }
                   }
                 }).catch(err => console.log(err));
               }
+
+              // addCategoryAttribute
+              // addAttributeByCategory
+              // addAttributeByCategoryName
 
 }
 
