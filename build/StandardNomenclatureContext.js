@@ -50,14 +50,11 @@ class StandardNomenclatureContext {
                         });
                         StandardNomenclatureContext.contextId = context.info.id.get();
 
-                        // console.log(StandardNomenclatureContext);
-                        // console.log(StandardNomenclatureContext.contextId);
                         resolve(true);
                     }).catch(reject);
                   }
                   else{
                       StandardNomenclatureContext.contextId = StandardNomenclatureContext.context.info.id.get();
-                    // console.log(StandardNomenclatureContext.contextId);
                     resolve( true );
                   }
                 });
@@ -65,10 +62,8 @@ class StandardNomenclatureContext {
               }
 
               static async generateStandardNomenclatureGraph(){
-                // console.log(STANDARD_NOMENCLATURE_GRAPH);
                 return this.initialize().then(async result => {
                   for(let category of STANDARD_NOMENCLATURE_GRAPH){
-                    // console.log(category);
                     const categoryId = SpinalGraphService.createNode({
                     name: category.name,
                     standard_name: category.standard_name,
@@ -88,21 +83,9 @@ class StandardNomenclatureContext {
                     }));
                     await SpinalGraphService.addChildInContext(categoryId, groupId, this.contextId, "hasGroup", SPINAL_RELATION_PTR_LST_TYPE);
                     for(let config of group.conf){
-                      // console.log(config);
-                      // const nomenclatureConfigurationId = SpinalGraphService.createNode({
-                      //   name: config.name,
-                      //   type: config.type,
-                      // }, new Model({
-                      //   name : config.elements.name
-                      // }));
-                      // await SpinalGraphService.addChildInContext(groupId, nomenclatureConfigurationId, this.contextId, "groupHasAttributeConfiguration", SPINAL_RELATION_PTR_LST_TYPE);
                       let categoryGraph = [];
                       if(category != undefined){
                         for(let category of config.elements.categories){
-                          // let attrs = [];
-                          // for(let attribute of category.attributes){
-                          //   attrs.push(new Lst(attribute));
-                          // }
                           categoryGraph.push({
                             id: category.id,
                             name: category.name,
@@ -122,20 +105,14 @@ class StandardNomenclatureContext {
                       }));
                       SpinalGraphService.addChildInContext(groupId, nomenclatureConfigurationId, this.contextId, "groupHasAttributeConfiguration", SPINAL_RELATION_PTR_LST_TYPE)
                         .then(result =>{
-                          // console.log(result);
                           let realNode = SpinalGraphService.getRealNode(nomenclatureConfigurationId);
-                          // console.log(realNode);
                           realNode.getElement().then(el =>{
-                            // let element = el.get();
                             if(el.id){
                               el.mod_attr("id", realNode.info.id.get());
                             }
                             else{
                               el.add_attr({id: realNode.info.id.get()});
-                            }
-                            
-                            // console.log(el);
-                            // resolve(element);
+                            } 
                           });
                         });
                     }
@@ -144,44 +121,6 @@ class StandardNomenclatureContext {
                  }).catch(err => console.log(err));
               }
 
-            // static async generateStandardControlEndpointsGraph(){
-              //console.log(STANDARD_TICKET_GRAPH);
-            //   return this.initialize().then(async result => {
-            //     for(let category of STANDARD_TICKET_GRAPH){
-                  //console.log(category);
-
-            //       const categoryId = SpinalGraphService.createNode({
-            //         name: category.name,
-            //         type: category.type,
-            //         icon: category.icon
-            //       }, new Model({
-            //         name : category.elements.name
-            //       }));
-            //       await SpinalGraphService.addChildInContext(this.contextId, categoryId, this.contextId, "hasCategory", SPINAL_RELATION_PTR_LST_TYPE);
-
-            //       for(let group of category.groups){
-            //         const groupId = SpinalGraphService.createNode({
-            //           name: group.name,
-            //           type: group.type,
-            //           color: group.color,
-            //         }, new Model({
-            //           name : group.elements.name
-            //         }));
-            //         await SpinalGraphService.addChildInContext(categoryId, groupId, this.contextId, "hasGroup", SPINAL_RELATION_PTR_LST_TYPE);
-
-            //         for(let controlEndpoint of group.groups){
-
-            //           const controlEndpointId = SpinalGraphService.createNode({
-            //             name: controlEndpoint.name,
-            //             type: controlEndpoint.type,
-            //           }, new Lst(controlEndpoint.elements));
-            //           await SpinalGraphService.addChildInContext(groupId, controlEndpointId, this.contextId, "groupHasSpinalControlPoint", SPINAL_RELATION_LST_PTR_TYPE);
-                      
-            //           }
-            //       }
-            //     }
-              //}).catch(err => console.log(err));
-            // }
 }
 
 

@@ -47,14 +47,11 @@ class StandardRoomContext {
                         });
                         StandardRoomContext.contextId = context.info.id.get();
 
-                        // console.log(StandardRoomContext);
-                        // console.log(StandardRoomContext.contextId);
                         resolve(true);
                     }).catch(reject);
                   }
                   else{
                       StandardRoomContext.contextId = StandardRoomContext.context.info.id.get();
-                    // console.log(StandardRoomContext.contextId);
                     resolve( true );
                   }
                 });
@@ -124,10 +121,8 @@ class StandardRoomContext {
             }
 
             static async generateStandardRoomsGraph(){
-              // console.log(STANDARD_ROOMS_GRAPH);
               return this.initialize().then(async result => {
                 for(let category of STANDARD_ROOMS_GRAPH){
-                  // console.log(category);
 
                   const categoryId = SpinalGraphService.createNode({
                     name: category.name,

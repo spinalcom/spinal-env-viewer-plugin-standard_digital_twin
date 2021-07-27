@@ -47,14 +47,11 @@ class StandardControlEndpointContext {
                         });
                         StandardControlEndpointContext.contextId = context.info.id.get();
 
-                        // console.log(StandardControlEndpointContext);
-                        // console.log(StandardControlEndpointContext.contextId);
                         resolve(true);
                     }).catch(reject);
                   }
                   else{
                       StandardControlEndpointContext.contextId = StandardControlEndpointContext.context.info.id.get();
-                    // console.log(StandardControlEndpointContext.contextId);
                     resolve( true );
                   }
                 });
@@ -62,10 +59,8 @@ class StandardControlEndpointContext {
               }
 
             static async generateStandardControlEndpointsGraph(){
-              // console.log(STANDARD_CONTROL_ENDPOINT_GRAPH);
               return this.initialize().then(async result => {
                 for(let category of STANDARD_CONTROL_ENDPOINT_GRAPH){
-                  // console.log(category);
 
                   const categoryId = SpinalGraphService.createNode({
                     name: category.name,

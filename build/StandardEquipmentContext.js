@@ -46,14 +46,11 @@ class StandardEquipmentContext {
                         });
                         StandardEquipmentContext.contextId = context.info.id.get();
 
-                        // console.log(StandardEquipmentContext);
-                        // console.log(StandardEquipmentContext.contextId);
                         resolve(true);
                     }).catch(reject);
                   }
                   else{
                       StandardEquipmentContext.contextId = StandardEquipmentContext.context.info.id.get();
-                    // console.log(StandardEquipmentContext.contextId);
                     resolve( true );
                   }
                 });
@@ -61,7 +58,6 @@ class StandardEquipmentContext {
               }
             
               static async generateStandardEquipmentsGraph(){
-                // console.log(STANDARD_EQUIPMENT_GRAPH);
                 return this.initialize().then(async result => {
                   for(let category of STANDARD_EQUIPMENT_GRAPH){
   
@@ -86,12 +82,10 @@ class StandardEquipmentContext {
                         name : group.name
                       }));
                       let groupNode = await SpinalGraphService.addChildInContext(categoryId, groupId, this.contextId, "hasGroup", SPINAL_RELATION_PTR_LST_TYPE);
-                      console.log(groupNode);
                       
                       if(group.categories != undefined){
                         for (let cat of group.categories){
                           let categoryAttribute = await AttributeService.addCategoryAttribute(groupNode, cat.label);
-                          console.log(categoryAttribute);
                           for (let attr of cat.attributes){
                             AttributeService.addAttributeByCategory(groupNode, categoryAttribute, attr.label, attr.value, attr.type, attr.unit);
                           }

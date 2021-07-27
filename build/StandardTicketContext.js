@@ -44,14 +44,13 @@ class StandardTicketContext {
             //             StandardTicketContext.context = context;
             //             StandardTicketContext.contextId = context.info.id.get();
 
-            //             console.log(StandardTicketContext);
-            //             console.log(StandardTicketContext.contextId);
+
             //             resolve(true);
             //         }).catch(reject);
             //       }
             //       else{
             //           StandardTicketContext.contextId = StandardTicketContext.context.info.id.get();
-            //         console.log(StandardTicketContext.contextId);
+
             //         resolve( true );
             //       }
             //     });
@@ -59,10 +58,8 @@ class StandardTicketContext {
             //   }
 
             // static async generateStandardControlEndpointsGraph(){
-            //   console.log(STANDARD_TICKET_GRAPH);
             //   return this.initialize().then(async result => {
             //     for(let category of STANDARD_TICKET_GRAPH){
-            //       console.log(category);
 
             //       const categoryId = SpinalGraphService.createNode({
             //         name: category.name,
