@@ -97,18 +97,21 @@ class StandardNomenclatureContext {
                       // }));
                       // await SpinalGraphService.addChildInContext(groupId, nomenclatureConfigurationId, this.contextId, "groupHasAttributeConfiguration", SPINAL_RELATION_PTR_LST_TYPE);
                       let categoryGraph = [];
-                      for(let category of config.elements.categories){
-                        // let attrs = [];
-                        // for(let attribute of category.attributes){
-                        //   attrs.push(new Lst(attribute));
-                        // }
-                        categoryGraph.push({
-                          id: category.id,
-                          name: category.name,
-                          standard_name: category.standard_name,
-                          attributes: new Lst(category.attributes)
-                        });
+                      if(category != undefined){
+                        for(let category of config.elements.categories){
+                          // let attrs = [];
+                          // for(let attribute of category.attributes){
+                          //   attrs.push(new Lst(attribute));
+                          // }
+                          categoryGraph.push({
+                            id: category.id,
+                            name: category.name,
+                            standard_name: category.standard_name,
+                            attributes: new Lst(category.attributes)
+                          });
+                        }
                       }
+                      
 
                       const nomenclatureConfigurationId = SpinalGraphService.createNode({
                         name: config.name,
@@ -195,7 +198,7 @@ class StandardNomenclatureContext {
   _defineProperty(StandardNomenclatureContext, "contextId", void 0);
 
   StandardNomenclatureContext.initialized = null;
-  StandardNomenclatureContext.contextName = "Contexte de Nomenclature Standardisé";
+  StandardNomenclatureContext.contextName = "NomenclatureConfiguration";
   StandardNomenclatureContext.type = "AttributeConfigurationGroupContext";
   
 export {StandardNomenclatureContext};

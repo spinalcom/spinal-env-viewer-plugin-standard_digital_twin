@@ -3165,7 +3165,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                         ]
                     }
                 ]
-            }  
+            }
         ]
     },
     {
@@ -5264,7 +5264,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 standard_name: "Circular LED spotlight for sanitary facilities",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
-                categories: [ 
+                categories: [
                     {
                         label: "GMAO",
                         attributes: [
@@ -5560,7 +5560,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type B39b- LICHTLAUF",
+                name: "Luminaire : Type B39b- LICHTLAUF",
                 standard_name: "Light Type B39b- LICHTLAUF",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -5585,7 +5585,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type C32a - SELUX",
+                name: "Luminaire : Type C32a - SELUX",
                 standard_name: "Light Type C32a - SELUX",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -5610,7 +5610,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type C32b - SELUX",
+                name: "Luminaire : Type C32b - SELUX",
                 standard_name: "Light Type C32b - SELUX",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -5635,7 +5635,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type C33a - SELUX",
+                name: "Luminaire : Type C33a - SELUX",
                 standard_name: "Light Type C33a - SELUX",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -5660,7 +5660,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type C34a - SELUX",
+                name: "Luminaire : Type C34a - SELUX",
                 standard_name: "Light Type C34a - SELUX",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -5685,7 +5685,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type C35a - SELUX",
+                name: "Luminaire : Type C35a - SELUX",
                 standard_name: "Light Type C35a - SELUX",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -5710,7 +5710,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type C35b - SELUX",
+                name: "Luminaire : Type C35b - SELUX",
                 standard_name: "Light Type C35b - SELUX",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -5735,7 +5735,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type C40a - BOCCI",
+                name: "Luminaire : Type C40a - BOCCI",
                 standard_name: "Light Type C40a - BOCCI",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -5760,7 +5760,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type C40B - BOCCI",
+                name: "Luminaire : Type C40B - BOCCI",
                 standard_name: "Light Type C40B - BOCCI",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -5785,7 +5785,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type D12a - NON DALI - WALDMANN-SERRE- Lampe portative",
+                name: "Luminaire : Type D12a - NON DALI - WALDMANN-SERRE- Lampe portative",
                 standard_name: "Light Type D12a - NOT DALI - WALDMANN-SERRE- portable light",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -5810,7 +5810,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type D24a - SAMMODE",
+                name: "Luminaire : Type D24a - SAMMODE",
                 standard_name: "Light Type D24a - SAMMODE",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -5835,7 +5835,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type D25a - SAMMODE",
+                name: "Luminaire : Type D25a - SAMMODE",
                 standard_name: "Light Type D25a - SAMMODE",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -5860,7 +5860,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type D26a - SAMMODE",
+                name: "Luminaire : Type D26a - SAMMODE",
                 standard_name: "Light Type D26a - SAMMODE",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -5885,7 +5885,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type E40a - SIMES",
+                name: "Luminaire : Type E40a - SIMES",
                 standard_name: "Light Type E40a - SIMES",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -5910,7 +5910,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type E41A- BEGA",
+                name: "Luminaire : Type E41A- BEGA",
                 standard_name: "Light Type E41A- BEGA",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -5935,7 +5935,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type E42a - SIMES",
+                name: "Luminaire : Type E42a - SIMES",
                 standard_name: "Light Type E42a - SIMES",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -5960,7 +5960,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type E43a - NON DALI - SIMES Auditorium - Encastré de sol pour balisage",
+                name: "Luminaire : Type E43a - NON DALI - SIMES Auditorium - Encastré de sol pour balisage",
                 standard_name: "Light Type E43a - NOT DALI - SIMES Auditorium - Floor recessed lighting",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -5985,7 +5985,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type E45 - NON DALI - DGA Auditorium - Contre marche",
+                name: "Luminaire : Type E45 - NON DALI - DGA Auditorium - Contre marche",
                 standard_name: "Light Type E45 - NON DALI - DGA Auditorium - close step",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -6010,7 +6010,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type M18a- LICHTLAUF",
+                name: "Luminaire : Type M18a- LICHTLAUF",
                 standard_name: "Light Type M18a- LICHTLAUF",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -6035,7 +6035,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type M19a- SAMMODE",
+                name: "Luminaire : Type M19a- SAMMODE",
                 standard_name: "Light Type M19a- SAMMODE",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -6060,7 +6060,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type M19a- SAMMODE",
+                name: "Luminaire : Type M19a- SAMMODE",
                 standard_name: "Light Type M19a- SAMMODE",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -6085,7 +6085,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type N144a - DALI - ERCO Toutes zones - murs déco",
+                name: "Luminaire : Type N144a - DALI - ERCO Toutes zones - murs déco",
                 standard_name: "Light Type N144a - DALI - ERCO - All zones - wall",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -6110,7 +6110,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type N146a- SAMMODE",
+                name: "Luminaire : Type N146a- SAMMODE",
                 standard_name: "Light Type N146a- SAMMODE",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -6135,7 +6135,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type N151a - DALI - FLOS - SERRE-Plafonnier fixe linéaire 23W",
+                name: "Luminaire : Type N151a - DALI - FLOS - SERRE-Plafonnier fixe linéaire 23W",
                 standard_name: "Light Type N151a - DALI - FLOS - SERRE-  23 W Linear ceiling light ",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -6160,7 +6160,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type N151B",
+                name: "Luminaire : Type N151B",
                 standard_name: "Light Type N151B",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -6185,7 +6185,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type N153a",
+                name: "Luminaire : Type N153a",
                 standard_name: "Light Type N153a",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -6210,7 +6210,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type N155a",
+                name: "Luminaire : Type N155a",
                 standard_name: "Light Type N155a",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -6260,7 +6260,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type N157a",
+                name: "Luminaire : Type N157a",
                 standard_name: "Light Type N157a",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -6285,7 +6285,7 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                 ]
             },
             {
-               name: "Luminaire : Type N167a",
+                name: "Luminaire : Type N167a",
                 standard_name: "Light Type N167a",
                 type: "BIMObjectGroup",
                 color: "#0ED6AE",
@@ -9062,8 +9062,6 @@ export const STANDARD_EQUIPMENT_GRAPH = [
         ]
     }
 
-    // A TERMINER ICI
-
 ];
 
 export const STANDARD_CONTROL_ENDPOINT_GRAPH = [
@@ -9704,97 +9702,428 @@ export const STANDARD_CONTROL_ENDPOINT_GRAPH = [
                         ]
                     },
                 ]
-            },            
-            
+            },
+
         ]
     }
 ];
 
 export const STANDARD_TICKET_GRAPH = [];
 
+// export const STANDARD_NOMENCLATURE_GRAPH = [
+//     {
+//        name: "Nomenclature Category",
+//        standard_name: "Nomenclature Category",
+//        type: "groupingCategory",
+//        icon: "add",
+//        groups: [
+//            {
+//                name: "Nomenclature Group",
+//                standard_name: "Nomenclature Group",
+//                type: "AttributeConfigurationGroup",
+//                color: "#000000",
+//                conf: [
+//                    {
+//                        name: "Building",
+//                        type: "AttributeConfiguration",
+//                        standard_name: "Building",
+//                        elements: {
+//                             name: "Nomenclature Configration",
+//                             categories: [
+//                                 {
+//                                     // name: "Standard Category",
+//                                     // standard_name: "Standard Category",
+//                                     // id: Date.now() + ++i,
+//                                     // attributes: [
+//                                     //     {
+//                                     //         name: "Standard Attribute 1",
+//                                     //         standard_name: "Standard Attribute 1",
+//                                     //         id: Date.now() + ++i,
+//                                     //         show: "false"
+//                                     //     },
+//                                     //     {
+//                                     //     name: "Standard Attribute 2",
+//                                     //     standard_name: "Standard Attribute 2",
+//                                     //     id: Date.now() + ++i,
+//                                     //     show: "false"
+//                                     //     }
+//                                     // ]
+//                                 }
+//                             ]
+//                        }
+//                    },
+//                    {
+//                         name: "Floor",
+//                         type: "AttributeConfiguration",
+//                         standard_name: "Floor",
+//                         elements: {
+//                             name: "Nomenclature Configration",
+//                             categories: []
+//                         }
+//                     },
+//                     {
+//                         name: "Room",
+//                         type: "AttributeConfiguration",
+//                         standard_name: "Room",
+//                         elements: {
+//                             name: "Nomenclature Configration",
+//                             categories: []
+//                         }
+//                     },
+//                     {
+//                         name: "Equipment",
+//                         type: "AttributeConfiguration",
+//                         standard_name: "Equipment",
+//                         elements: {
+//                             name: "Nomenclature Configration",
+//                             categories: []
+//                         }
+//                     }
+//                ]
+//            }
+//        ]
+//     }
+// ];
+
 export const STANDARD_NOMENCLATURE_GRAPH = [
     {
-       name: "Nomenclature Category",
-       standard_name: "Nomenclature Category",
-       type: "groupingCategory",
-       icon: "add",
-       groups: [
-           {
-               name: "Nomenclature Group",
-               standard_name: "Nomenclature Group",
-               type: "AttributeConfigurationGroup",
-               color: "#000000",
-               conf: [
-                   {
-                       name: "Building",
-                       type: "AttributeConfiguration",
-                       standard_name: "Building",
-                       elements: {
-                            name: "Nomenclature Configration",
+        name: "Standards",
+        standard_name: "Standards",
+        type: "groupingCategory",
+        icon: "add",
+        groups: [
+            {
+                name: "Bâtiment",
+                standard_name: "Building",
+                type: "AttributeConfigurationGroup",
+                color: "#000000",
+                conf: [
+                    {
+                        name: "Configuration standard",
+                        type: "AttributeConfigurationGroup",
+                        standard_name: "Standard configuration",
+                        elements: {
+                            name: "Standard configuration",
                             categories: [
                                 {
-                                    // name: "Standard Category",
-                                    // standard_name: "Standard Category",
-                                    // id: Date.now() + ++i,
-                                    // attributes: [
-                                    //     {
-                                    //         name: "Standard Attribute 1",
-                                    //         standard_name: "Standard Attribute 1",
-                                    //         id: Date.now() + ++i,
-                                    //         show: "false"
-                                    //     },
-                                    //     {
-                                    //     name: "Standard Attribute 2",
-                                    //     standard_name: "Standard Attribute 2",
-                                    //     id: Date.now() + ++i,
-                                    //     show: "false"
-                                    //     }
-                                    // ]
+                                    name: "Standard Attributes",
+                                    standard_name: "Standard Attributes",
+                                    id: Date.now() + ++i,
+                                    attributes: [
+                                        {
+                                            name: "capacity",
+                                            standard_name: "capacity",
+                                            type: "Integer",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                            name: "area",
+                                            standard_name: "area",
+                                            type: "Float",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                            name: "volume",
+                                            standard_name: "volume",
+                                            type: "Float",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                            name: "Nombre de pièces",
+                                            standard_name: "Number of rooms",
+                                            type: "Integer",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                            name: "Nombre d'étages",
+                                            standard_name: "Number of floors",
+                                            type: "Integer",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                            name: "Nombre de salles de réunion",
+                                            standard_name: "Number of meeting rooms",
+                                            type: "Integer",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                            name: "Nombre d'open spaces",
+                                            standard_name: "Number of open spaces",
+                                            type: "Integer",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    name: "Spinal Building Information",
+                                    standard_name: "Spinal Building Information",
+                                    id: Date.now() + ++i,
+                                    attributes: [
+                                        {
+                                            name: "name",
+                                            standard_name: "name",
+                                            type: "String",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                            name: "adresse",
+                                            standard_name: "adress",
+                                            type: "Integer",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        }
+                                    ]
                                 }
                             ]
-                       }
-                   },
-                   {
-                        name: "Floor",
-                        type: "AttributeConfiguration",
-                        standard_name: "Floor",
-                        elements: {
-                            name: "Nomenclature Configration",
-                            categories: []
                         }
                     },
+                ]
+            },
+            {
+                name: "Etage",
+                standard_name: "Floor",
+                type: "AttributeConfigurationGroup",
+                color: "#000000",
+                conf: [
                     {
-                        name: "Room",
-                        type: "AttributeConfiguration",
-                        standard_name: "Room",
+                        name: "Configuration standard",
+                        type: "AttributeConfigurationGroup",
+                        standard_name: "Standard configuration",
                         elements: {
-                            name: "Nomenclature Configration",
-                            categories: []
-                        }
-                    },
-                    {
-                        name: "Equipment",
-                        type: "AttributeConfiguration",
-                        standard_name: "Equipment",
-                        elements: {
-                            name: "Nomenclature Configration",
-                            categories: []
+                            name: "Standard configuration",
+                            categories: [
+                                {
+                                    name: "Spatial",
+                                    standard_name: "Spatial",
+                                    id: Date.now() + ++i,
+                                    attributes: [
+                                        {
+                                            name: "name",
+                                            standard_name: "name",
+                                            type: "String",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                            name: "category",
+                                            standard_name: "category",
+                                            type: "String",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                            name: "elevation",
+                                            standard_name: "elevation",
+                                            type: "Integer",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    name: "Standard Attributes",
+                                    standard_name: "Standard Attributes",
+                                    id: Date.now() + ++i,
+                                    attributes: [
+                                        {
+                                            name: "capacity",
+                                            standard_name: "capacity",
+                                            type: "Integer",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                            name: "area",
+                                            standard_name: "area",
+                                            type: "Float",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                            name: "volume",
+                                            standard_name: "volume",
+                                            type: "Float",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                            name: "Nombre de pièces",
+                                            standard_name: "Number of rooms",
+                                            type: "Integer",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                            name: "Nombre de salles de réunion",
+                                            standard_name: "Number of meeting rooms",
+                                            type: "Integer",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                            name: "Nombre d'open spaces",
+                                            standard_name: "Number of open spaces",
+                                            type: "Integer",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     }
-               ]
-           }
-       ]
+                ]
+            },
+            {
+                name: "Pièce",
+                standard_name: "Room",
+                type: "AttributeConfigurationGroup",
+                color: "#000000",
+                conf: [
+                    {
+                        name: "Configuration standard",
+                        type: "AttributeConfiguration",
+                        standard_name: "Standard configuration",
+                        elements: {
+                            name: "Standard configuration",
+                            categories: [
+                                {
+                                    name: "Spatial",
+                                    standard_name: "Spatial",
+                                    id: Date.now() + ++i,
+                                    attributes: [
+                                        {
+                                            name: "name",
+                                            standard_name: "name",
+                                            type: "String",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                        name: "category",
+                                        type: "String",
+                                        standard_name: "category",
+                                        id: Date.now() + ++i,
+                                        show: "true"
+                                        },
+                                        {
+                                            name: "level",
+                                            type: "Integer",
+                                            standard_name: "level",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                            name: "area",
+                                            type: "Float",
+                                            standard_name: "area",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                            name: "perimeter",
+                                            type: "Float",
+                                            standard_name: "perimeter",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                            name: "volume",
+                                            type: "Float",
+                                            standard_name: "volume",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                            name: "number",
+                                            type: "Integer",
+                                            standard_name: "number",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    name: "Standard Attributes",
+                                    standard_name: "Standard Attributes",
+                                    id: Date.now() + ++i,
+                                    attributes: [
+                                        {
+                                            name: "capacity",
+                                            standard_name: "capacity",
+                                            type: "Integer",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                name: "Equipment",
+                standard_name: "Equipment",
+                type: "AttributeConfigurationGroup",
+                color: "#000000",
+                conf: [
+                    {
+                        name: "Configuration standard",
+                        type: "AttributeConfiguration",
+                        standard_name: "Standard configuration",
+                        elements: {
+                            name: "Standard configuration",
+                            categories: [
+                                {
+                                    name: "BIM attributes",
+                                    standard_name: "BIM attributes ",
+                                    id: Date.now() + ++i,
+                                    attributes: [
+                                        {
+                                            name: "Revit family",
+                                            standard_name: "Revit family",
+                                            type: "String",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                            name: "Revit type",
+                                            standard_name: "Revit type",
+                                            type: "String",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                            name: "Revit category",
+                                            standard_name: "Revit category",
+                                            type: "String",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        },
+                                        {
+                                            name: "Numéro Omniclass",
+                                            standard_name: "Omniclass number",
+                                            type: "String",
+                                            id: Date.now() + ++i,
+                                            show: "true"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+
+        ]
     }
 ];
-
-// name: "Affectation",
-//         type: "groupingCategory",
-//         standard_name: "Affectation",
-//         icon: "accessibility",
-//         groups: [
-//             {
-//                 name: "Meeting Room",
-//                 type: "geographicRoomGroup",
-//                 standard_name: "Meeting Room",
-//                 color: "#D53434",
-//             },
