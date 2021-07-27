@@ -9813,52 +9813,57 @@ export const STANDARD_NOMENCLATURE_GRAPH = [
                                         {
                                             name: "capacity",
                                             standard_name: "capacity",
-                                            type: "Integer",
+                                            type: "Number",
+                                            unit: "",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         },
                                         {
                                             name: "area",
                                             standard_name: "area",
-                                            type: "Float",
+                                            type: "Number",
+                                            unit: "m2",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         },
                                         {
                                             name: "volume",
                                             standard_name: "volume",
-                                            type: "Float",
+                                            type: "Number",
+                                            unit: "m3",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         },
                                         {
                                             name: "Nombre de pièces",
                                             standard_name: "Number of rooms",
-                                            type: "Integer",
+                                            type: "Number",
+                                            unit: "",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         },
                                         {
                                             name: "Nombre d'étages",
                                             standard_name: "Number of floors",
-                                            type: "Integer",
-                                            id: Date.now() + ++i,
-                                            show: "true"
-                                        },
-                                        {
-                                            name: "Nombre de salles de réunion",
-                                            standard_name: "Number of meeting rooms",
-                                            type: "Integer",
-                                            id: Date.now() + ++i,
-                                            show: "true"
-                                        },
-                                        {
-                                            name: "Nombre d'open spaces",
-                                            standard_name: "Number of open spaces",
-                                            type: "Integer",
+                                            type: "Number",
+                                            unit: "",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         }
+                                        // {
+                                        //     name: "Nombre de salles de réunion",
+                                        //     standard_name: "Number of meeting rooms",
+                                        //     type: "Number",
+                                        //     id: Date.now() + ++i,
+                                        //     show: "true"
+                                        // },
+                                        // {
+                                        //     name: "Nombre d'open spaces",
+                                        //     standard_name: "Number of open spaces",
+                                        //     type: "Number",
+                                        //     id: Date.now() + ++i,
+                                        //     show: "true"
+                                        // }
                                     ]
                                 },
                                 {
@@ -9870,13 +9875,15 @@ export const STANDARD_NOMENCLATURE_GRAPH = [
                                             name: "name",
                                             standard_name: "name",
                                             type: "String",
+                                            unit: "",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         },
                                         {
                                             name: "adresse",
                                             standard_name: "adress",
-                                            type: "Integer",
+                                            type: "Number",
+                                            unit: "",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         }
@@ -9909,6 +9916,7 @@ export const STANDARD_NOMENCLATURE_GRAPH = [
                                             name: "name",
                                             standard_name: "name",
                                             type: "String",
+                                            unit: "",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         },
@@ -9916,13 +9924,15 @@ export const STANDARD_NOMENCLATURE_GRAPH = [
                                             name: "category",
                                             standard_name: "category",
                                             type: "String",
+                                            unit: "",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         },
                                         {
                                             name: "elevation",
                                             standard_name: "elevation",
-                                            type: "Integer",
+                                            type: "Number",
+                                            unit: "",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         }
@@ -9936,45 +9946,49 @@ export const STANDARD_NOMENCLATURE_GRAPH = [
                                         {
                                             name: "capacity",
                                             standard_name: "capacity",
-                                            type: "Integer",
+                                            type: "Number",
+                                            unit: "",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         },
                                         {
                                             name: "area",
                                             standard_name: "area",
-                                            type: "Float",
+                                            type: "Number",
+                                            unit: "m2",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         },
                                         {
                                             name: "volume",
                                             standard_name: "volume",
-                                            type: "Float",
+                                            type: "Number",
+                                            unit: "m3",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         },
                                         {
                                             name: "Nombre de pièces",
                                             standard_name: "Number of rooms",
-                                            type: "Integer",
-                                            id: Date.now() + ++i,
-                                            show: "true"
-                                        },
-                                        {
-                                            name: "Nombre de salles de réunion",
-                                            standard_name: "Number of meeting rooms",
-                                            type: "Integer",
-                                            id: Date.now() + ++i,
-                                            show: "true"
-                                        },
-                                        {
-                                            name: "Nombre d'open spaces",
-                                            standard_name: "Number of open spaces",
-                                            type: "Integer",
+                                            type: "Number",
+                                            unit: "",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         }
+                                        // {
+                                        //     name: "Nombre de salles de réunion",
+                                        //     standard_name: "Number of meeting rooms",
+                                        //     type: "Number",
+                                        //     id: Date.now() + ++i,
+                                        //     show: "true"
+                                        // },
+                                        // {
+                                        //     name: "Nombre d'open spaces",
+                                        //     standard_name: "Number of open spaces",
+                                        //     type: "Number",
+                                        //     id: Date.now() + ++i,
+                                        //     show: "true"
+                                        // }
                                     ]
                                 }
                             ]
@@ -10004,6 +10018,7 @@ export const STANDARD_NOMENCLATURE_GRAPH = [
                                             name: "name",
                                             standard_name: "name",
                                             type: "String",
+                                            unit: "",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         },
@@ -10011,41 +10026,47 @@ export const STANDARD_NOMENCLATURE_GRAPH = [
                                         name: "category",
                                         type: "String",
                                         standard_name: "category",
+                                        unit: "",
                                         id: Date.now() + ++i,
                                         show: "true"
                                         },
                                         {
                                             name: "level",
-                                            type: "Integer",
+                                            type: "Number",
                                             standard_name: "level",
+                                            unit: "",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         },
                                         {
                                             name: "area",
-                                            type: "Float",
+                                            type: "Number",
                                             standard_name: "area",
+                                            unit: "m2",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         },
                                         {
                                             name: "perimeter",
-                                            type: "Float",
+                                            type: "Number",
                                             standard_name: "perimeter",
+                                            unit: "m",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         },
                                         {
                                             name: "volume",
-                                            type: "Float",
+                                            type: "Number",
                                             standard_name: "volume",
+                                            unit: "m3",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         },
                                         {
                                             name: "number",
-                                            type: "Integer",
+                                            type: "Number",
                                             standard_name: "number",
+                                            unit: "",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         }
@@ -10059,7 +10080,8 @@ export const STANDARD_NOMENCLATURE_GRAPH = [
                                         {
                                             name: "capacity",
                                             standard_name: "capacity",
-                                            type: "Integer",
+                                            type: "Number",
+                                            unit: "",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         }
@@ -10092,6 +10114,7 @@ export const STANDARD_NOMENCLATURE_GRAPH = [
                                             name: "Revit family",
                                             standard_name: "Revit family",
                                             type: "String",
+                                            unit: "",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         },
@@ -10099,6 +10122,7 @@ export const STANDARD_NOMENCLATURE_GRAPH = [
                                             name: "Revit type",
                                             standard_name: "Revit type",
                                             type: "String",
+                                            unit: "",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         },
@@ -10106,6 +10130,7 @@ export const STANDARD_NOMENCLATURE_GRAPH = [
                                             name: "Revit category",
                                             standard_name: "Revit category",
                                             type: "String",
+                                            unit: "",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         },
@@ -10113,6 +10138,7 @@ export const STANDARD_NOMENCLATURE_GRAPH = [
                                             name: "Numéro Omniclass",
                                             standard_name: "Omniclass number",
                                             type: "String",
+                                            unit: "",
                                             id: Date.now() + ++i,
                                             show: "true"
                                         }
