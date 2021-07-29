@@ -767,7 +767,7 @@ export const STANDARD_ROOMS_GRAPH = [
 
 export const STANDARD_EQUIPMENT_GRAPH = [
     {
-        name: "Plomberie",
+        name: "PLB",
         type: "groupingCategory",
         standard_name: "PLB",
         icon: "accessibility",
@@ -9052,6 +9052,140 @@ export const STANDARD_EQUIPMENT_GRAPH = [
                             {
                                 label: "Regroupement",
                                 value: true,
+                                type: "bool",
+                                unit: ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        name: "CFO",
+        type: "groupingCategory",
+        standard_name: "CFO",
+        icon: "accessibility",
+        color: "#17D240",
+        groups: [
+            {
+                name: "HTA Poste de livrason",
+                standard_name: "HTA delivery station",
+                type: "BIMObjectGroup",
+                color: "#A467B6",
+                categories: [
+                    {
+                        label: "GMAO",
+                        attributes: [
+                            {
+                                label: "Designation",
+                                value: "HTA Poste de livrason",
+                                type: "String",
+                                unit: ""
+                            },
+                            {
+                                label: "Regroupement",
+                                value: false,
+                                type: "bool",
+                                unit: ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                name: "HTA Poste de transformation",
+                standard_name: "HTA processing station",
+                type: "BIMObjectGroup",
+                color: "#A467B6",
+                categories: [
+                    {
+                        label: "GMAO",
+                        attributes: [
+                            {
+                                label: "Designation",
+                                value: "HTA Poste de transformation",
+                                type: "String",
+                                unit: ""
+                            },
+                            {
+                                label: "Regroupement",
+                                value: false,
+                                type: "bool",
+                                unit: ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                name: "Groupe électrogène 2x1600kVA",
+                standard_name: "2x1600kVA power plant",
+                type: "BIMObjectGroup",
+                color: "#A467B6",
+                categories: [
+                    {
+                        label: "GMAO",
+                        attributes: [
+                            {
+                                label: "Designation",
+                                value: "Groupe électrogène 2x1600kVA",
+                                type: "String",
+                                unit: ""
+                            },
+                            {
+                                label: "Regroupement",
+                                value: false,
+                                type: "bool",
+                                unit: ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                name: "Groupe électrogène Parking",
+                standard_name: "Parking power plant",
+                type: "BIMObjectGroup",
+                color: "#A467B6",
+                categories: [
+                    {
+                        label: "GMAO",
+                        attributes: [
+                            {
+                                label: "Designation",
+                                value: "Groupe électrogène Parking",
+                                type: "String",
+                                unit: ""
+                            },
+                            {
+                                label: "Regroupement",
+                                value: false,
+                                type: "bool",
+                                unit: ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                name: "Attentes commerces",
+                standard_name: "expectations shops",
+                type: "BIMObjectGroup",
+                color: "#A467B6",
+                categories: [
+                    {
+                        label: "GMAO",
+                        attributes: [
+                            {
+                                label: "Designation",
+                                value: "Attentes commerces",
+                                type: "String",
+                                unit: ""
+                            },
+                            {
+                                label: "Regroupement",
+                                value: false,
                                 type: "bool",
                                 unit: ""
                             }
