@@ -32,12 +32,13 @@ import { SpinalForgeExtention } from "spinal-env-viewer-panel-manager-service_sp
 import { spinalContextMenuService } from "spinal-env-viewer-context-menu-service";
 
 // vue files
-// import DialogAddDevices from "./vue/addDevices.vue";
+import PanelGenerateContext from "./vue/PanelGenerateContext.vue";
 
 
 // button files
 // import { ButtonAddDeviceProfileContext } from "./buttons/ButtonAddDeviceProfileContext";
 import { ButtonInitializeAStandardDigitalTwin } from "./buttons/ButtonInitializeAStandardDigitalTwin";
+import { ButtonGenerateFromExcel } from "./buttons/ButtonGenerateFromExcel";
 
 
 
@@ -50,6 +51,7 @@ Vue.use( Vuetify );
 
 
 spinalContextMenuService.registerApp("GraphManagerTopBar", new ButtonInitializeAStandardDigitalTwin(), [7]);
+spinalContextMenuService.registerApp("GraphManagerTopBar", new ButtonGenerateFromExcel(), [7]);
 // spinalContextMenuService.registerApp("GraphManagerSideBar", new ButtonAddDeviceProfiles(), [7]);
 
 
@@ -62,15 +64,15 @@ spinalContextMenuService.registerApp("GraphManagerTopBar", new ButtonInitializeA
                           /* ********** */
 
 
-// SpinalMountExtention.mount( {
-//   // name registered.
-//   name: "DialogAddDeviceProfiles",
-//   // Vue.extend to create a Compoment constructor
-//   vueMountComponent: Vue.extend( DialogAddDeviceProfiles ),
-//   // where to  append the Compoment
-//   parentContainer: document.body
-// }
-// );
+SpinalMountExtention.mount( {
+  // name registered.
+  name: "PanelGenerateContext",
+  // Vue.extend to create a Compoment constructor
+  vueMountComponent: Vue.extend( PanelGenerateContext ),
+  // where to  append the Compoment
+  parentContainer: document.body
+}
+);
 
 
 

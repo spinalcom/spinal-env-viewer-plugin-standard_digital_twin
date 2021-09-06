@@ -27,6 +27,7 @@ import { SpinalContext, SpinalGraphService, SpinalNode, SPINAL_RELATION_PTR_LST_
 import { Model } from 'spinal-core-connectorjs_type';
 import { STANDARD_EQUIPMENT_GRAPH } from "../conf";
 import AttributeService from 'spinal-env-viewer-plugin-documentation-service';
+import { CONTEXT_TO_CATEGORY_RELATION, CATEGORY_TO_GROUP_RELATION, EQUIPMENT_CATEGORY_TYPE, EQUIPMENT_GROUP_TYPE, EQUIPMENT_CATEGORY_ICON } from "../constants";
 
 class StandardEquipmentContext {
 
@@ -95,6 +96,70 @@ class StandardEquipmentContext {
                     }
                   }
                 }).catch(err => console.log(err));
+              }
+
+              static async generateFromExcel(dataJson){
+                let jsonObject = dataJson["Equipment Context"];
+                // initialisation du context
+                return this.initialize().then(async result => {
+                  //initialisation de l'algorithme
+                  let category = undefined;
+                  // préparation des clefs de valeur
+                  let keyTab = Object.keys(jsonObject[0]);
+                  let iNodeCat = keyTab.filter(elt => elt.includes("AttributeOfCat")).length;
+                  let iNodeGrp = keyTab.filter(elt => elt.includes("AttributeOfGroup")).length;
+                  //parcours du tableau
+                  for(let elt of jsonObject){
+                    // categories
+                    if(elt.Category_name != ""){
+                      let standardName = ( (elt.Category_standard_name == "") ? elt.Category_name : elt.Category_standard_name);
+                      const catNodeId = SpinalGraphService.createNode({
+                        name: elt.Category_name,
+                        type: EQUIPMENT_CATEGORY_TYPE,
+                        standard_name: standardName,
+                        icon: EQUIPMENT_CATEGORY_ICON,
+                        color: elt.Category_color
+                      },
+                      new Model({
+                        name: elt.Category_name
+                      }));
+                      // changement de categorie
+                      category = await SpinalGraphService.addChildInContext(this.contextId, catNodeId, this.contextId, CONTEXT_TO_CATEGORY_RELATION, SPINAL_RELATION_PTR_LST_TYPE);
+                      //attributes of category
+                      for(let iC=1 ; iC <= iNodeCat ; iC++){
+                        // console.log(iC);
+                      }
+                    }
+                    // groups
+                    else if(elt.Group_name != ""){
+                      let standardName = ( (elt.Group_standard_name == "") ? elt.Group_name : elt.Group_standard_name);
+                      const grpNodeId = SpinalGraphService.createNode({
+                        name: elt.Group_name,
+                        type: EQUIPMENT_GROUP_TYPE,
+                        standard_name: standardName,
+                        color: elt.Group_color
+                      },
+                      new Model({
+                        name: elt.Group_name
+                      }));
+                      let groupNode = await SpinalGraphService.addChildInContext(category.info.id.get(), grpNodeId, this.contextId, CATEGORY_TO_GROUP_RELATION, SPINAL_RELATION_PTR_LST_TYPE);
+                      let tabCats = [];
+                      for(let iG=1 ; iG <= iNodeGrp ; iG++){
+                        if(elt["AttributeOfGroup"+iG] != ""){
+                          let strAttr = elt["AttributeOfGroup"+iG].split(";");
+                          // console.log(strAttr);
+                          let categoryAttribute = await AttributeService.addCategoryAttribute(groupNode, strAttr[0]);
+                          AttributeService.addAttributeByCategory(groupNode, categoryAttribute, strAttr[1], strAttr[4], strAttr[2], strAttr[3]);
+                          
+                        }
+                      }
+                    }
+                    else{
+
+                    }
+                  }
+                })
+                .catch(err => console.log(err));
               }
 
               // addCategoryAttribute
