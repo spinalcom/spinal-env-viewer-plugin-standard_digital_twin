@@ -1,0 +1,16 @@
+{
+  "name": "transformJson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/transformJSON.js",
+  "types": "declarations",
+  "scripts": {
+    "build": "rm -rf dist declarations && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  }
+}
