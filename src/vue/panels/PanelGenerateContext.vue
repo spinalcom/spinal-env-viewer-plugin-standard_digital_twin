@@ -34,8 +34,11 @@ with this file. If not, see
               </md-field>
             </v-card-text>
             <v-card-text>
-              <label>Download a sample</label>
-              <v-icon>description</v-icon>
+              <!--  <label>Download a sample</label> -->
+              <button type="button" class="download-btn" v-on:click="download">
+                Download a sample
+              </button>
+              <!--   <v-icon>description</v-icon> -->
             </v-card-text>
             <v-card-text>
               <v-card-actions>
@@ -80,7 +83,8 @@ import { SpinalGraphService } from "spinal-env-viewer-graph-service";
 import { SPINAL_RELATION_LST_PTR_TYPE } from "spinal-env-viewer-graph-service";
 
 import spinalExcelManager from "spinal-env-viewer-plugin-excel-manager-service";
-
+import XLSX from "xlsx";
+import { EXCEL_SAMPLE } from "../../js/sample";
 const {
   spinalPanelManagerService
 } = require("spinal-env-viewer-panel-manager-service");
@@ -93,7 +97,8 @@ export default {
       fselected: "",
       items: ["Equipment Context", "Rooms Context"],
       dialog: false,
-      multiple: null
+      multiple: null,
+      excelSample: EXCEL_SAMPLE
     };
   },
   methods: {
@@ -130,6 +135,12 @@ export default {
     getFile(event) {
       this.multiple = event.target.files;
       console.log(event.target.files);
+    },
+    download: function() {
+      const data = XLSX.utils.json_to_sheet(this.excelSample);
+      const wb = XLSX.utils.book_new();
+      XLSX.utils.book_append_sheet(wb, data, "Context_Sample");
+      XLSX.writeFile(wb, "sample.xlsx");
     }
   }
 };
