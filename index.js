@@ -22,58 +22,88 @@
  * <http://resources.spinalcom.com/licenses.pdf>.
  */
 
-
-
-import Vue from "vue";
+import Vue from 'vue';
 import Vuetify from 'vuetify';
 import 'spinal-env-viewer-plugin-forge';
-import { SpinalMountExtention } from "spinal-env-viewer-panel-manager-service";
-import { SpinalForgeExtention } from "spinal-env-viewer-panel-manager-service_spinalforgeextention";
-import { spinalContextMenuService } from "spinal-env-viewer-context-menu-service";
+import { SpinalMountExtention } from 'spinal-env-viewer-panel-manager-service';
+import { SpinalForgeExtention } from 'spinal-env-viewer-panel-manager-service_spinalforgeextention';
+import { spinalContextMenuService } from 'spinal-env-viewer-context-menu-service';
 
 // vue files
-import PanelGenerateContext from "./vue/PanelGenerateContext.vue";
-
+import PanelGenerateContext from './src/vue/panels/PanelGenerateContext.vue';
+import PanelSelectContextStandard from './src/vue/panels/panelSelectContextStandard.vue';
 
 // button files
-// import { ButtonAddDeviceProfileContext } from "./buttons/ButtonAddDeviceProfileContext";
-import { ButtonInitializeAStandardDigitalTwin } from "./buttons/ButtonInitializeAStandardDigitalTwin";
-import { ButtonGenerateFromExcel } from "./buttons/ButtonGenerateFromExcel";
+import { ButtonInitializeAStandardDigitalTwin } from './src/buttons/ButtonInitializeAStandardDigitalTwin.js';
+import { ButtonGenerateFromExcel } from './src/buttons/ButtonGenerateFromExcel.js';
 
+import PanelCatAttributes from './src/vue/panels/panelCatAttributes.vue';
+import PanelGrAttributes from './src/vue/panels/panelGrAttributes.vue';
 
+Vue.use(Vuetify);
 
+/* ******* */
+/* BUTTONS */
+/* ******* */
 
-Vue.use( Vuetify );
-
-                            /* ******* */
-                            /* BUTTONS */
-                            /* ******* */
-
-
-spinalContextMenuService.registerApp("GraphManagerTopBar", new ButtonInitializeAStandardDigitalTwin(), [7]);
-spinalContextMenuService.registerApp("GraphManagerTopBar", new ButtonGenerateFromExcel(), [7]);
-// spinalContextMenuService.registerApp("GraphManagerSideBar", new ButtonAddDeviceProfiles(), [7]);
-
-
-
-
-
-
-                          /* ********** */
-                          /* EXTENSIONS */
-                          /* ********** */
-
-
-SpinalMountExtention.mount( {
-  // name registered.
-  name: "PanelGenerateContext",
-  // Vue.extend to create a Compoment constructor
-  vueMountComponent: Vue.extend( PanelGenerateContext ),
-  // where to  append the Compoment
-  parentContainer: document.body
-}
+spinalContextMenuService.registerApp(
+  'GraphManagerTopBar',
+  new ButtonInitializeAStandardDigitalTwin(),
+  [7]
+);
+spinalContextMenuService.registerApp(
+  'GraphManagerTopBar',
+  new ButtonGenerateFromExcel(),
+  [7]
 );
 
+/* ********** */
+/* EXTENSIONS */
+/* ********** */
 
+SpinalMountExtention.mount({
+  // name registered.
+  name: 'PanelGenerateContext',
+  // Vue.extend to create a Compoment constructor
+  vueMountComponent: Vue.extend(PanelGenerateContext),
+  // where to  append the Compoment
+  parentContainer: document.body,
+});
 
+SpinalMountExtention.mount({
+  // name registered.
+  name: 'panelCatAttributes',
+  // Vue.extend to create a Compoment constructor
+  vueMountComponent: Vue.extend(PanelCatAttributes),
+  // where to  append the Compoment
+  parentContainer: document.body,
+});
 
+SpinalMountExtention.mount({
+  // name registered.
+  name: 'panelGrAttributes',
+  // Vue.extend to create a Compoment constructor
+  vueMountComponent: Vue.extend(PanelGrAttributes),
+  // where to  append the Compoment
+  parentContainer: document.body,
+});
+
+const element = {
+  // name registered.
+  name: 'panelSelectContextStandard',
+  // Vue.extend to create a Compoment constructor
+  panel: {
+    title: 'Generate context standard',
+    closeBehaviour: 'remove',
+  },
+  vueMountComponent: Vue.extend(PanelSelectContextStandard),
+  // where to  append the Compoment
+  parentContainer: document.body,
+  style: {
+    height: '475px',
+    left: '400px',
+  },
+};
+
+const extension = SpinalForgeExtention.createExtention(element);
+SpinalForgeExtention.registerExtention(element.name, extension);
